@@ -1,0 +1,9 @@
+{
+  "name": "Toby-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/Toby-e2e/src",
+  "tags": [],
+  "implicitDependencies": ["Toby"],
+  "// targets": "to see all targets run: nx show project Toby-e2e --web",
+  "targets": {}
+}
