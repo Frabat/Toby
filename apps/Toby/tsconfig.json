@@ -1,6 +1,11 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@/utils/*": ["app/utils/*"],
+      "@/api/*": ["app/api/*"]
+    },
     "jsx": "preserve",
     "allowJs": true,
     "esModuleInterop": true,
@@ -16,7 +21,10 @@
         "name": "next"
       }
     ],
-    "types": ["jest", "node"]
+    "types": [
+      "jest",
+      "node"
+    ]
   },
   "include": [
     "**/*.ts",
@@ -25,7 +33,13 @@
     "**/*.jsx",
     "../../apps/Toby/.next/types/**/*.ts",
     "../../dist/apps/Toby/.next/types/**/*.ts",
-    "next-env.d.ts"
+    "next-env.d.ts",
+    ".next/types/**/*.ts"
   ],
-  "exclude": ["node_modules", "jest.config.ts", "**/*.spec.ts", "**/*.test.ts"]
+  "exclude": [
+    "node_modules",
+    "jest.config.ts",
+    "**/*.spec.ts",
+    "**/*.test.ts"
+  ]
 }
